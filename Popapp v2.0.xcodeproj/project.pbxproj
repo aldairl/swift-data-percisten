@@ -12,6 +12,15 @@
 		960A6FB7224688880048ACC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960A6FB5224688880048ACC5 /* Main.storyboard */; };
 		960A6FB92246888F0048ACC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960A6FB82246888F0048ACC5 /* Assets.xcassets */; };
 		960A6FBC2246888F0048ACC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960A6FBA2246888F0048ACC5 /* LaunchScreen.storyboard */; };
+		960A6FC422468E470048ACC5 /* favorites.db in Resources */ = {isa = PBXBuildFile; fileRef = 960A6FC322468E470048ACC5 /* favorites.db */; };
+		960A6FC722468EF30048ACC5 /* SitesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A6FC622468EF30048ACC5 /* SitesManager.swift */; };
+		960A6FC9224690EA0048ACC5 /* Site.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A6FC8224690EA0048ACC5 /* Site.swift */; };
+		960A6FCC22469C930048ACC5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 960A6FCB22469C930048ACC5 /* libsqlite3.tbd */; };
+		960A6FD922469CD40048ACC5 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 960A6FCF22469CD10048ACC5 /* FMDatabaseAdditions.m */; };
+		960A6FDA22469CD40048ACC5 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 960A6FD022469CD20048ACC5 /* FMDatabaseQueue.m */; };
+		960A6FDB22469CD40048ACC5 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 960A6FD422469CD20048ACC5 /* FMDatabasePool.m */; };
+		960A6FDC22469CD40048ACC5 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 960A6FD622469CD30048ACC5 /* FMResultSet.m */; };
+		960A6FDD22469CD40048ACC5 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 960A6FD822469CD40048ACC5 /* FMDatabase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,22 @@
 		960A6FB82246888F0048ACC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		960A6FBB2246888F0048ACC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		960A6FBD2246888F0048ACC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		960A6FC322468E470048ACC5 /* favorites.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = favorites.db; sourceTree = "<group>"; };
+		960A6FC622468EF30048ACC5 /* SitesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesManager.swift; sourceTree = "<group>"; };
+		960A6FC8224690EA0048ACC5 /* Site.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Site.swift; sourceTree = "<group>"; };
+		960A6FCB22469C930048ACC5 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		960A6FCD22469CCF0048ACC5 /* Popapp v2.0-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Popapp v2.0-Bridging-Header.h"; sourceTree = "<group>"; };
+		960A6FCE22469CD10048ACC5 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		960A6FCF22469CD10048ACC5 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		960A6FD022469CD20048ACC5 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		960A6FD122469CD20048ACC5 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		960A6FD222469CD20048ACC5 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		960A6FD322469CD20048ACC5 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		960A6FD422469CD20048ACC5 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		960A6FD522469CD30048ACC5 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		960A6FD622469CD30048ACC5 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		960A6FD722469CD40048ACC5 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		960A6FD822469CD40048ACC5 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				960A6FCC22469C930048ACC5 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +66,7 @@
 			children = (
 				960A6FB0224688880048ACC5 /* Popapp v2.0 */,
 				960A6FAF224688880048ACC5 /* Products */,
+				960A6FCA22469C920048ACC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +81,45 @@
 		960A6FB0224688880048ACC5 /* Popapp v2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				960A6FC522468E570048ACC5 /* fmdb */,
+				960A6FC322468E470048ACC5 /* favorites.db */,
 				960A6FB1224688880048ACC5 /* AppDelegate.swift */,
 				960A6FB3224688880048ACC5 /* ViewController.swift */,
 				960A6FB5224688880048ACC5 /* Main.storyboard */,
 				960A6FB82246888F0048ACC5 /* Assets.xcassets */,
 				960A6FBA2246888F0048ACC5 /* LaunchScreen.storyboard */,
 				960A6FBD2246888F0048ACC5 /* Info.plist */,
+				960A6FC622468EF30048ACC5 /* SitesManager.swift */,
+				960A6FC8224690EA0048ACC5 /* Site.swift */,
 			);
 			path = "Popapp v2.0";
+			sourceTree = "<group>";
+		};
+		960A6FC522468E570048ACC5 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				960A6FD722469CD40048ACC5 /* FMDatabase.h */,
+				960A6FD822469CD40048ACC5 /* FMDatabase.m */,
+				960A6FD322469CD20048ACC5 /* FMDatabaseAdditions.h */,
+				960A6FCF22469CD10048ACC5 /* FMDatabaseAdditions.m */,
+				960A6FCE22469CD10048ACC5 /* FMDatabasePool.h */,
+				960A6FD422469CD20048ACC5 /* FMDatabasePool.m */,
+				960A6FD522469CD30048ACC5 /* FMDatabaseQueue.h */,
+				960A6FD022469CD20048ACC5 /* FMDatabaseQueue.m */,
+				960A6FD122469CD20048ACC5 /* FMDB.h */,
+				960A6FD222469CD20048ACC5 /* FMResultSet.h */,
+				960A6FD622469CD30048ACC5 /* FMResultSet.m */,
+				960A6FCD22469CCF0048ACC5 /* Popapp v2.0-Bridging-Header.h */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		960A6FCA22469C920048ACC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				960A6FCB22469C930048ACC5 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +154,7 @@
 				TargetAttributes = {
 					960A6FAD224688880048ACC5 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -125,6 +184,7 @@
 				960A6FBC2246888F0048ACC5 /* LaunchScreen.storyboard in Resources */,
 				960A6FB92246888F0048ACC5 /* Assets.xcassets in Resources */,
 				960A6FB7224688880048ACC5 /* Main.storyboard in Resources */,
+				960A6FC422468E470048ACC5 /* favorites.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +197,13 @@
 			files = (
 				960A6FB4224688880048ACC5 /* ViewController.swift in Sources */,
 				960A6FB2224688880048ACC5 /* AppDelegate.swift in Sources */,
+				960A6FC9224690EA0048ACC5 /* Site.swift in Sources */,
+				960A6FDD22469CD40048ACC5 /* FMDatabase.m in Sources */,
+				960A6FC722468EF30048ACC5 /* SitesManager.swift in Sources */,
+				960A6FDB22469CD40048ACC5 /* FMDatabasePool.m in Sources */,
+				960A6FD922469CD40048ACC5 /* FMDatabaseAdditions.m in Sources */,
+				960A6FDC22469CD40048ACC5 /* FMResultSet.m in Sources */,
+				960A6FDA22469CD40048ACC5 /* FMDatabaseQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Popapp v2.0/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -290,6 +358,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "thinking.Popapp-v2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Popapp v2.0/fmdb/Popapp v2.0-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,6 +369,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Popapp v2.0/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,6 +378,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "thinking.Popapp-v2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Popapp v2.0/fmdb/Popapp v2.0-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
