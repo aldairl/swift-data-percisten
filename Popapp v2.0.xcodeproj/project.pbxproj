@@ -21,6 +21,7 @@
 		960A6FDB22469CD40048ACC5 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 960A6FD422469CD20048ACC5 /* FMDatabasePool.m */; };
 		960A6FDC22469CD40048ACC5 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 960A6FD622469CD30048ACC5 /* FMResultSet.m */; };
 		960A6FDD22469CD40048ACC5 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 960A6FD822469CD40048ACC5 /* FMDatabase.m */; };
+		960A6FDF2246AF580048ACC5 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A6FDE2246AF580048ACC5 /* FavoritesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		960A6FD622469CD30048ACC5 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		960A6FD722469CD40048ACC5 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		960A6FD822469CD40048ACC5 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		960A6FDE2246AF580048ACC5 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				960A6FB1224688880048ACC5 /* AppDelegate.swift */,
 				960A6FB3224688880048ACC5 /* ViewController.swift */,
 				960A6FB5224688880048ACC5 /* Main.storyboard */,
+				960A6FDE2246AF580048ACC5 /* FavoritesTableViewController.swift */,
 				960A6FB82246888F0048ACC5 /* Assets.xcassets */,
 				960A6FBA2246888F0048ACC5 /* LaunchScreen.storyboard */,
 				960A6FBD2246888F0048ACC5 /* Info.plist */,
@@ -198,6 +201,7 @@
 				960A6FB4224688880048ACC5 /* ViewController.swift in Sources */,
 				960A6FB2224688880048ACC5 /* AppDelegate.swift in Sources */,
 				960A6FC9224690EA0048ACC5 /* Site.swift in Sources */,
+				960A6FDF2246AF580048ACC5 /* FavoritesTableViewController.swift in Sources */,
 				960A6FDD22469CD40048ACC5 /* FMDatabase.m in Sources */,
 				960A6FC722468EF30048ACC5 /* SitesManager.swift in Sources */,
 				960A6FDB22469CD40048ACC5 /* FMDatabasePool.m in Sources */,

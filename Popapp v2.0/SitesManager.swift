@@ -31,10 +31,14 @@ private var sitesFile:URL = {
 
 //class manager --------------------
 class SiteManager{
-    
+    private lazy var sites:[Site] = self.loadSites()
+    var siteCount:Int {return sites.count}
+    func getSite(at index:Int)->Site {
+        return sites[index]
 }
 
-private func loadBooks()->[Site] {
+
+private func loadSites()->[Site] {
     return retrieveSites() ?? []
 }
 
@@ -66,4 +70,5 @@ func retrieveSites() -> [Site]?{
     }
     db.close()
     return sites
+}
 }
