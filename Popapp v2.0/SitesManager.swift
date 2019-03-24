@@ -30,19 +30,39 @@ private var sitesFile:URL = {
     }()
 
 //class manager --------------------
+
 class SiteManager{
     private lazy var sites:[Site] = self.loadSites()
     var siteCount:Int {return sites.count}
+    
     func getSite(at index:Int)->Site {
         return sites[index]
 }
 
 
-private func loadSites()->[Site] {
+    func loadSites(position :Int? = nil)->[Site] {
+        if position == 1 {
+            return parques()
+        }
     return retrieveSites() ?? []
 }
+    
+    private func parques()->[Site] { return [
+        Site(title: "Parque1",des:""),
+        Site(title: "parque2",des:""),
+        Site(title: "parque3",des:""),
+        Site(title: "parque4",des:"")
+        ] }
 
-
+func addSite(_ site:Site){
+     var siteg = site
+    SQLAddSite(site: &siteg)
+        sites.append(siteg)
+    
+    }
+    
+    
+    //----------SQL
 func getOpenDB()->FMDatabase? {
     let db = FMDatabase(path: sitesFile.path)
     guard db.open() else {
@@ -71,4 +91,16 @@ func retrieveSites() -> [Site]?{
     db.close()
     return sites
 }
+    
+    func SQLAddSite(site:inout Site){
+        guard  let db = getOpenDB() else { return}
+        
+        do{
+            try db.executeUpdate("insert into site (title, desSite, cover) values (?, ?, ?)", values: [site.title, site.desSite, site.cover])
+        }catch{
+            
+            print("failed: \(error.localizedDescription)")
+        }
+        db.close()
+    }
 }

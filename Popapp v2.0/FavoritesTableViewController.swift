@@ -31,16 +31,31 @@ class FavoritesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        
         return sitesManager.siteCount
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "favoriteCell", for: indexPath)
-        
+        //let site = sitesManager.loadSites(position: 1)
         let site = sitesManager.getSite(at: indexPath.row)
+        //cell.textLabel?.text = site[indexPath.row].title
         cell.textLabel?.text = site.title
+        cell.imageView?.image = site.cover
         return cell
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let selectedItem = tableView.indexPathForSelectedRow,
+            let detailSite = segue.destination as? DetailSiteViewController{
+            let site = sitesManager.getSite(at: selectedItem.item)
+            
+            detailSite.titleS = site.title
+            detailSite.des = site.desSite
+            detailSite.img = site.cover
+        }
     }
     
 

@@ -22,6 +22,7 @@
 		960A6FDC22469CD40048ACC5 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 960A6FD622469CD30048ACC5 /* FMResultSet.m */; };
 		960A6FDD22469CD40048ACC5 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 960A6FD822469CD40048ACC5 /* FMDatabase.m */; };
 		960A6FDF2246AF580048ACC5 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A6FDE2246AF580048ACC5 /* FavoritesTableViewController.swift */; };
+		96A05CCA2247BB920039D79D /* DetailSiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A05CC92247BB920039D79D /* DetailSiteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		960A6FD722469CD40048ACC5 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		960A6FD822469CD40048ACC5 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		960A6FDE2246AF580048ACC5 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
+		96A05CC92247BB920039D79D /* DetailSiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSiteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				960A6FB3224688880048ACC5 /* ViewController.swift */,
 				960A6FB5224688880048ACC5 /* Main.storyboard */,
 				960A6FDE2246AF580048ACC5 /* FavoritesTableViewController.swift */,
+				96A05CC92247BB920039D79D /* DetailSiteViewController.swift */,
 				960A6FB82246888F0048ACC5 /* Assets.xcassets */,
 				960A6FBA2246888F0048ACC5 /* LaunchScreen.storyboard */,
 				960A6FBD2246888F0048ACC5 /* Info.plist */,
@@ -208,6 +211,7 @@
 				960A6FD922469CD40048ACC5 /* FMDatabaseAdditions.m in Sources */,
 				960A6FDC22469CD40048ACC5 /* FMResultSet.m in Sources */,
 				960A6FDA22469CD40048ACC5 /* FMDatabaseQueue.m in Sources */,
+				96A05CCA2247BB920039D79D /* DetailSiteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
